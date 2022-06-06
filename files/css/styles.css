@@ -1,3 +1,5 @@
+/*------------------------MENU BAR------------------------*/
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -62,7 +64,7 @@
   display: block;
 }
 
-/*Main*/
+/*------------------------MAIN------------------------*/
 main {
   display: block;
   margin-left: auto;
@@ -82,14 +84,21 @@ h2, h3, h4, h5, h6{
 
 p {
   margin: auto;
-  width: 50%;
+  width: 70%;
   padding: 10px;
-
   font-family: Lora;
 }
 
 .about {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .mainBackground {
@@ -100,8 +109,27 @@ p {
   padding-bottom: 50px;
 }
 
+.centerText {
+  text-align: center;
+}
 
-/*MAP*/
+.return {
+  text-align: center;
+}
+
+
+/*------------------------404------------------------*/
+
+.notFoundCritter {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*------------------------MAP------------------------*/
 
 /*Makes map fit the page*/
 .worldMap, .ecoZones, .countriesMap {
@@ -123,11 +151,14 @@ p {
     margin: 10px auto;
 }
 
+/*Bolds numbers and adds period and space to make up for list-style-type:none below*/
 ol > li:before {
   font-weight: bold;
   content: counter(item) ". ";
 }
 
+/*Removes list style type to be able to put it back but in bold above*/
+/*Also changes background color of even numbers*/
 ol>li {
   list-style-type:none;
   counter-increment:item;
@@ -137,6 +168,8 @@ ol>li {
   font-family: Lora;
 }
 
+/*Removes list style type to be able to put it back but in bold above*/
+/*Also changes background color of odd numbers*/
 ol>li:nth-child(odd) {
   list-style-type:none;
   counter-increment:item;
@@ -144,4 +177,22 @@ ol>li:nth-child(odd) {
   padding: 3px;
   width: 90%;
   font-family: Lora;
+}
+
+
+
+/*------------------------ADVENTURE LOGS------------------------*/
+
+.adventureSessionHeaders {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(153, 25, 25);
+}
+
+.adventureSessionHeaders a {
+  color: red;
+}
+
+.adventureSessionHeaders a:hover {
+  color: rgb(153, 25, 25);
 }
