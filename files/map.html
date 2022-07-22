@@ -1,0 +1,70 @@
+<html>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel-Decorative">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+
+<style>
+  body {
+    background-image: url("images/leather-dark-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: 101%;
+    background-color: #cccccc;
+    background-attachment: fixed;
+  }
+</style>
+
+  <body>
+
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="adventureLog.html">Adventure Log</a>
+        <div class="dropdown">
+          <button class="dropbtn"><a class="active" href="lore.html">Explore</a></button>
+          <div class="dropdown-content">
+            <a class="active" href="map.html">Maps</a>
+            <a href="races.html">Races</a>
+            <a href="pantheon.html">Pantheon</a>
+            <a href="library.html">Library</a>
+            <a href="404.html">Misc.</a>
+          </div>
+        </div>
+        <a href="materials.html">Materials</a>
+        <a href="calendar.html">Scheduling</a>
+    </div>
+
+    <main>
+
+      <div class="mainBackground">
+
+        <h1>Maps of Oudn</h1>
+        <h2>Click on one of the maps below to learn different information about the world of Oudn!</h2>
+
+        <div class="centerDiv">
+                <div class="mapRow">
+                  <div class="mapColumn">
+                    <!--<a href="worldMap.html"><img src="images/unscrolledMap1.png" style="width:100%"></a>-->
+                    <a href="worldMap.html"><img class="worldMapImage" src='images/scrolledMap1.png' onmouseover="this.src='images/unscrolledMap1.png';" onmouseout="this.src='images/scrolledMap1.png';" /></a>
+                    <h3>World Map</h3>
+                  </div>
+                  <div class="mapColumn">
+                    <!--<a href="countriesMap.html"><img src="images/countries-map.png" style="width:100%"></a>-->
+                    <a href="countriesMap.html"><img class="worldMapImage" src='images/scrolledMap2.png' onmouseover="this.src='images/unscrolledMap2.png';" onmouseout="this.src='images/scrolledMap2.png';" /></a>
+                    <h3>Countries</h3>
+                  </div>
+                  <div class="mapColumn">
+                    <!--<a href="ecoZones.html"><img src="images/ecological-zones.png" style="width:100%"></a>-->
+                    <a href="ecoZones.html"><img class="worldMapImage" src='images/scrolledMap3.png' onmouseover="this.src='images/unscrolledMap3.png';" onmouseout="this.src='images/scrolledMap3.png';" /></a>
+                    <h3>Ecological Zones</h3>
+                  </div>
+                </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
