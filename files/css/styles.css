@@ -360,6 +360,18 @@ ul>li:nth-child(odd) {
   display: table;
 }
 
+.godsRow2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.godsRow2 {
+  position: relative;
+  left: 13%;
+  margin: auto;
+}
+
 .godName .godNameInfo {
   visibility: hidden;
   width: 18.1%;
@@ -410,6 +422,29 @@ ul>li:nth-child(odd) {
   margin-bottom: 0px;
 }
 
+.bherōName {
+  color: #F9F9F4;
+  background-image: linear-gradient(#5c331a, #000000);
+  /*background-color: #22421d;*/
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.kremonName {
+  color: #F9F9F4;
+  background-image: linear-gradient(#8a0a63, #000000);
+  /*background-color: #22421d;*/
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.korwosName {
+  color: #F9F9F4;
+  background-image: linear-gradient(#5c166b, #000000);
+  /*background-color: #22421d;*/
+  padding: 10px;
+  margin-bottom: 0px;
+}
 
 
 
@@ -436,6 +471,13 @@ ul>li:nth-child(odd) {
   display: block;
   width: 30%;
   padding: 10px;
+  margin: auto;
+}
+
+.materialsSizeKrusk {
+  display: inline;
+  width: 25%;
+  padding: 2px;
   margin: auto;
 }
 
